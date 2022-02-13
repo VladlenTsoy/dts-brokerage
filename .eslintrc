@@ -22,7 +22,7 @@
     "prettier"
   ],
   "rules": {
-    "prettier/prettier": "error",
+//    "prettier/prettier": "error",
     "quotes": ["error", "double"],
     "prefer-const": "error",
     "@typescript-eslint/no-unused-vars": "error",
