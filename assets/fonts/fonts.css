@@ -26,7 +26,7 @@
 
 @font-face {
     font-family: 'Druk';
-    src: local('Druk'), url('./DRUK WIDE WEB BOLD REGULAR.ttf') format('truetype');
+    src: local('Druk'), url('DrukBold.TTF') format('truetype');
     font-weight: 600;
     font-style: normal;
     font-display: swap;
