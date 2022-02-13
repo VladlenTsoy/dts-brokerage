@@ -5,7 +5,8 @@
     --primary-color: #17144D;
     --warning-color: #EA734E;
     --black-color: #17144D;
-    --bg-grey: rgba(23, 20, 77, 0.02);
+    /*--bg-grey: rgba(23, 20, 77, 0.02);*/
+    --bg-grey: #F9F9F9;
     --font-size-title: 35px;
     --font-size-sub: 25px;
     --font-size-lg: 20px;
