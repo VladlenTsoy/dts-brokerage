@@ -1,0 +1,63 @@
+.cards {
+    margin: -10% auto 0;
+    position: relative;
+    z-index: 6;
+    max-width: var(--max-width);
+    display: grid;
+    gap: 45px;
+}
+
+.card {
+    background: var(--bg-grey);
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    color: white;
+}
+
+.card:first-child {
+    color: black;
+}
+
+.card:nth-of-type(2) {
+    background: var(--warning-color);
+    grid-template-columns: 2fr 1fr;
+}
+
+.card:nth-of-type(3) {
+    background: var(--primary-color);
+}
+
+.card h4 {
+    font-family: Druk, sans-serif;
+    font-size: var(--font-size-lg);
+    color: white;
+    margin: 0 0 28px;
+}
+
+.card:first-child h4 {
+    color: var(--warning-color);
+}
+
+.body {
+    padding: 33px 58px 46px 33px;
+}
+
+.video {
+    background: var(--primary-color);
+}
+
+.card .img {
+    padding-bottom: calc(100% / 2.6);
+}
+
+.card:first-child .img {
+    background: var(--bg-grey) url("../../../assets/images/carriers/carrier-1.png") no-repeat center;
+}
+
+.card:nth-of-type(2) .img {
+    background: var(--bg-grey) url("../../../assets/images/carriers/carrier-2.png") no-repeat center;
+}
+
+.card:nth-of-type(3) .img {
+    background: var(--bg-grey) url("../../../assets/images/carriers/carrier-3.png") no-repeat center;
+}

@@ -20,7 +20,7 @@
     right: 0;
     top: 0;
     bottom: 0;
-    background: var(--bg-grey) url("../../../assets/images/banner.jpg") no-repeat center;
+    background: var(--bg-grey) url("../../../assets/images/banner-about-us.png") no-repeat center;
     background-size: cover;
     z-index: 3;
 }
@@ -33,7 +33,7 @@
     top: 0;
     bottom: 0;
     background: var(--primary-color);
-    opacity: .48;
+    opacity: .8;
     z-index: 4;
 }
 
@@ -48,7 +48,6 @@
     z-index: 5;
     color: white;
     display: flex;
-    /*align-items: start;*/
     justify-content: center;
     flex-direction: column;
     padding-bottom: calc(100% / 5);
