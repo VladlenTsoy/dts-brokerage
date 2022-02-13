@@ -18,9 +18,11 @@
   },
   "plugins": [
     "react",
-    "@typescript-eslint"
+    "@typescript-eslint",
+    "prettier"
   ],
   "rules": {
+    "prettier/prettier": "error",
     "quotes": ["error", "double"],
     "prefer-const": "error",
     "@typescript-eslint/no-unused-vars": "error",
