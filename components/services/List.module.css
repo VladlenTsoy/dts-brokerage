@@ -1,0 +1,8 @@
+.container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 70px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 61px 112px;
+}
