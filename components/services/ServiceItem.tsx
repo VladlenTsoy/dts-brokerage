@@ -10,7 +10,9 @@ interface ServiceItemProps {
 const ServiceItem: React.FC<ServiceItemProps> = ({title, icon, children}) => {
     return (
         <div className={styles.item}>
-            <Image src={icon} alt={title} className={styles.icon} width={60} height={40} />
+            <div className={styles.icon}>
+                <Image src={icon} alt={title} width={60} height={40} />
+            </div>
             <div className={styles.title}>{title}</div>
             <div className={styles.desc}>{children}</div>
         </div>

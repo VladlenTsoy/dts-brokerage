@@ -1,13 +1,13 @@
 import React from "react"
 import Header from "../components/header/Header"
-import Contacts from "../components/contacts/Contacts"
 import Footer from "../components/footer/Footer"
+import Banner from "../components/contact-us/banner/Banner"
 
 const ContactUs = () => {
     return (
         <>
             <Header />
-            <Contacts />
+            <Banner />
             <Footer />
         </>
     )

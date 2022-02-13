@@ -1,0 +1,66 @@
+.banner {
+    position: relative;
+}
+
+.wrapper {
+    width: 100%;
+    position: relative;
+    display: block;
+}
+
+.wrapper::before {
+    content: "";
+    display: block;
+    padding-bottom: calc(100% / 3);
+}
+
+.image {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: var(--bg-grey) url("../../../assets/images/banner-services.png") no-repeat center;
+    background-size: cover;
+    z-index: 3;
+}
+
+.image::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: var(--primary-color);
+    opacity: .48;
+    z-index: 4;
+}
+
+.container {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    max-width: var(--max-width);
+    margin: 0 auto;
+    z-index: 5;
+    color: white;
+    display: flex;
+    /*align-items: start;*/
+    justify-content: center;
+    flex-direction: column;
+}
+
+.title {
+    font-size: var(--font-size-title);
+    margin-top: 0;
+    margin-bottom: 22px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.desc {
+    font-size: var(--font-size-sub);
+}
