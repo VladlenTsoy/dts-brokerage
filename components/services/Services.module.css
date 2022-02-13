@@ -1,0 +1,24 @@
+.services {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 62px 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3rem 4rem;
+}
+
+.icon {
+    width: 60px;
+    height: 40px;
+    margin-bottom: 34px;
+}
+
+.title {
+    font-size: var(--font-size-lg);
+    margin-bottom: 24px;
+    font-family: Druk, sans-serif;
+    color: var(--primary-color);
+}

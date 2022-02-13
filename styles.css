@@ -1,0 +1,57 @@
+@import "assets/fonts/fonts.css";
+
+:root {
+    --max-width: 1374px;
+    --primary-color: #17144D;
+    --warning-color: #EA734E;
+    --black-color: #17144D;
+    --bg-grey: rgba(23, 20, 77, 0.02);
+    --font-size-title: 35px;
+    --font-size-sub: 25px;
+    --font-size-lg: 20px;
+    --font-size-md: 18px;
+    --font-size-sm: 16px;
+}
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Exo2, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+textarea {
+    font-family: Exo2, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+* {
+    box-sizing: border-box;
+    font-size: var(--font-size-md);
+}
+
+h1 {
+    font-family: Druk, sans-serif;
+    font-size: var(--font-size-title);
+    margin-top: 0;
+}
+
+h2 {
+    font-family: Druk, sans-serif;
+    font-size: var(--font-size-title);
+    color: var(--warning-color);
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 40px;
+}
+
+h3 {
+    font-weight: 400;
+    margin-top: 0;
+}

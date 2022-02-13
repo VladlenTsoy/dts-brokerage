@@ -1,0 +1,26 @@
+.header {
+    height: 110px;
+    background: var(--primary-color);
+}
+
+.container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.navigation {
+    display: flex;
+    color: white;
+    text-transform: uppercase;
+    gap: 4rem;
+}
+
+.item {
+    font-family: Druk, sans-serif;
+    font-size: var(--font-size-sm);
+    font-weight: normal;
+}
