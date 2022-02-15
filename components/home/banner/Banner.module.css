@@ -45,6 +45,7 @@
     bottom: 0;
     max-width: var(--max-width);
     margin: 0 auto;
+    padding: 0 1rem;
     z-index: 5;
     color: white;
     display: flex;

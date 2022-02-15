@@ -53,6 +53,7 @@ const Header: React.FC<HeaderProps> = ({title = "DTS", desc = "", image}) => {
                     <Link href="/" passHref>
                         <div className={styles.logo}>
                             <Image src={LogoImage} alt="dts-brokerage" width={200} height={70} />
+                            {/*<Image src={LogoImage} alt="dts-brokerage" width={150} height={55} />*/}
                         </div>
                     </Link>
                     <div className={styles.navigation}>

@@ -1,5 +1,5 @@
 .header {
-    height: 110px;
+    /*height: 110px;*/
     background: var(--primary-color);
 }
 
@@ -32,4 +32,13 @@
 
 .item.active {
     color: var(--warning-color);
+}
+
+@media (max-width: 767px) {
+    .container {
+        padding: 10px 1rem;
+    }
+    .navigation {
+        display: none;
+    }
 }
