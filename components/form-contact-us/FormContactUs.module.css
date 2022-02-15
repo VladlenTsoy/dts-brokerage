@@ -28,3 +28,9 @@
     background: var(--warning-color);
     border: 0;
 }
+
+@media (max-width: 767px) {
+    .form {
+        width: 100%;
+    }
+}

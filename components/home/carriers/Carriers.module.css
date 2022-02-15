@@ -16,7 +16,7 @@
 .carriers {
     max-width: var(--max-width);
     margin: 0 auto;
-    padding: 62px 0;
+    padding: 62px 1rem;
 }
 
 .carriers h2 {
@@ -74,4 +74,35 @@
 
 .square.orange .title, .square.blue .title {
     color: white;
+}
+
+.square:last-child {
+    grid-column-start: auto;
+    grid-column-end: auto;
+}
+
+@media (max-width: 992px) {
+    .squares {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .square:last-child {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+}
+
+@media (max-width: 767px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+    .squares {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .square:last-child {
+        grid-column-start: auto;
+        grid-column-end: auto;
+    }
 }

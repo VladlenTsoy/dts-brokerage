@@ -16,5 +16,5 @@
 .banner .container {
     max-width: var(--max-width);
     margin: 0 auto;
-    padding: 25px 0;
+    padding: 25px 1rem;
 }
