@@ -50,6 +50,7 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
+    padding: 0 1rem;
     padding-bottom: calc(100% / 5);
     transform: translateY(15%);
 }

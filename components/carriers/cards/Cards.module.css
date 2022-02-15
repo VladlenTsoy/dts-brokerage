@@ -5,6 +5,7 @@
     max-width: var(--max-width);
     display: grid;
     gap: 45px;
+    padding: 0 1rem;
 }
 
 .card {
@@ -48,16 +49,52 @@
 
 .card .img {
     padding-bottom: calc(100% / 2.6);
+    background-size: cover;
 }
 
 .card:first-child .img {
     background: var(--bg-grey) url("../../../assets/images/carriers/carrier-1.png") no-repeat center;
+    background-size: cover;
 }
 
 .card:nth-of-type(2) .img {
     background: var(--bg-grey) url("../../../assets/images/carriers/carrier-2.png") no-repeat center;
+    background-size: cover;
 }
 
 .card:nth-of-type(3) .img {
     background: var(--bg-grey) url("../../../assets/images/carriers/carrier-3.png") no-repeat center;
+    background-size: cover;
+}
+
+@media (max-width: 992px) {
+    .card {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .card:nth-of-type(2) {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 767px) {
+    .card {
+        grid-template-columns: 1fr;
+    }
+
+    .card:nth-of-type(2) {
+        grid-template-columns: 1fr;
+    }
+
+    .card:nth-of-type(2) .body {
+        order: 1;
+    }
+
+    .card:nth-of-type(2) .img {
+        order: 2;
+    }
+
+    .card .img {
+        padding-bottom: calc(100% / 2);
+    }
 }
