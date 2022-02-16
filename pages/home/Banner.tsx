@@ -4,9 +4,6 @@ import styles from "./Banner.module.css"
 const Banner = () => {
     return (
         <div className={styles.banner}>
-            <div className={styles.wrapper}>
-                <div className={styles.image} />
-            </div>
             <div className={styles.container}>
                 <h1 className={styles.title}>
                     DTS Brokerage Inc.<br />

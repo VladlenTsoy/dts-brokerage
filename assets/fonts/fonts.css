@@ -18,7 +18,7 @@
 
 @font-face {
     font-family: 'Druk';
-    src: local('Druk'), url('./DrukWideLCG-Medium.ttf') format('truetype');
+    src: local('Druk'), url('./DrukBold.TTF') format('truetype');
     font-weight: 400;
     font-style: normal;
     font-display: swap;
@@ -26,7 +26,7 @@
 
 @font-face {
     font-family: 'Druk';
-    src: local('Druk'), url('DrukBold.TTF') format('truetype');
+    src: local('Druk'), url('./DrukBold.TTF') format('truetype');
     font-weight: 600;
     font-style: normal;
     font-display: swap;
