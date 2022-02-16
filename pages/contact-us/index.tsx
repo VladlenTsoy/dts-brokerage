@@ -6,7 +6,7 @@ import Banner from "./Banner"
 const ContactUs = () => {
     return (
         <>
-            <Header />
+            <Header title="DTS Brokerage Inc - Contact Us"/>
             <Banner />
             <Footer />
         </>

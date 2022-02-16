@@ -8,7 +8,7 @@ import Benefits from "./Benefits"
 const AboutUs = () => {
     return (
         <>
-            <Header />
+            <Header title="DTS Brokerage Inc - About Us" />
             <Banner />
             <Benefits />
             <Contacts />

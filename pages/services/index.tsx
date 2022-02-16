@@ -8,7 +8,7 @@ import List from "./List"
 const Services = () => {
     return (
         <>
-            <Header />
+            <Header title="DTS Brokerage Inc - Services"/>
             <Banner />
             <List />
             <Contacts />

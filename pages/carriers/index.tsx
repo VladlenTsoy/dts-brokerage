@@ -7,7 +7,7 @@ import Footer from "../../components/footer/Footer"
 const Carriers = () => {
     return (
         <>
-            <Header />
+            <Header title="DTS Brokerage Inc - Carriers" />
             <Banner />
             <Contacts />
             <Footer />

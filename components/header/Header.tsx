@@ -14,7 +14,7 @@ interface HeaderProps {
     image?: string
 }
 
-const Header: React.FC<HeaderProps> = ({title = "DTS", desc = "", image}) => {
+const Header: React.FC<HeaderProps> = ({title = "DTS Brokerage Inc", desc = "", image}) => {
     const router = useRouter()
     const url = (typeof window !== "undefined" && window.location.href) || "https://dts.com/"
     const host = (typeof window !== "undefined" && window.location.host) || "dts.com"
