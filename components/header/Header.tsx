@@ -25,10 +25,7 @@ const Header: React.FC<HeaderProps> = ({title = "DTS Brokerage Inc", desc = "", 
             <Head>
                 <title key="head-title">{title}</title>
                 <meta key="head-description" name="description" content={desc} />
-                <meta
-                    name="viewport"
-                    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
-                />
+                <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                 {/* Facebook Meta Tags */}
                 <meta property="og:url" content={url} />
                 <meta property="og:type" content="website" />
