@@ -1,6 +1,6 @@
 import React from "react"
 import styles from "./Services.module.css"
-import ServiceItem from "../../services/ServiceItem"
+import ServiceItem from "../../components/services/ServiceItem"
 
 const Services = () => {
     return (

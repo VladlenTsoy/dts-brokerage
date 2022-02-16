@@ -1,7 +1,7 @@
 .banner {
     position: relative;
     margin-bottom: 40px;
-    background: var(--bg-grey) url("../../../assets/images/banner.jpg") no-repeat center;
+    background: var(--bg-grey) url("../../assets/images/banner.jpg") no-repeat center;
     background-size: cover;
 }
 

@@ -1,9 +1,9 @@
 import type {NextPage} from "next"
 import Header from "../components/header/Header"
-import Banner from "../components/home/banner/Banner"
-import AboutUs from "../components/home/about-us/AboutUs"
-import Services from "../components/home/services/Services"
-import Carriers from "../components/home/carriers/Carriers"
+import Banner from "./home/Banner"
+import AboutUs from "./home/AboutUs"
+import Services from "./home/Services"
+import Carriers from "./home/Carriers"
 import Contacts from "../components/contacts/Contacts"
 import Footer from "../components/footer/Footer"
 

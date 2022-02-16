@@ -1,6 +1,6 @@
 import React from "react"
 import styles from "./Banner.module.css"
-import FormContactUs from "../../form-contact-us/FormContactUs"
+import FormContactUs from "../../components/form-contact-us/FormContactUs"
 
 const Banner = () => {
     return (
