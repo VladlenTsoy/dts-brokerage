@@ -29,7 +29,7 @@
 
 .title {
     color: white;
-    font-family: Druk, sans-serif;
+    font-family: "Druk", sans-serif;
     font-size: var(--font-size-title);
     text-transform: uppercase;
 }

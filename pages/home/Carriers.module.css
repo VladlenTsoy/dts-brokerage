@@ -59,7 +59,7 @@
 .square .title {
     font-size: var(--font-size-lg);
     color: var(--warning-color);
-    font-family: Druk, sans-serif;
+    font-family: "Druk", sans-serif;
 }
 
 .square.orange {

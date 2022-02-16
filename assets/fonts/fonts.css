@@ -17,27 +17,13 @@
 }
 
 @font-face {
-    font-family: 'Druk';
-    src: local('Druk'), url('./DrukWideLCG-Medium.woff') format('woff');
-    font-weight: 400;
+    font-family: "Druk";
+    src: url("Druk.eot");
+    src: url("Druk.eot?#iefix") format("embedded-opentype"),
+    url("Druk.woff2") format("woff2"),
+    url("Druk.woff") format("woff"),
+    url("Druk.ttf") format("truetype"),
+    url("Druk.svg#Druk Wide Bold") format("svg");
     font-style: normal;
     font-display: swap;
 }
-
-/*@font-face {*/
-/*    font-family: 'Druk';*/
-/*    src: local('Druk'), url('./DrukBold.TTF') format('truetype');*/
-/*    font-weight: 600;*/
-/*    font-style: normal;*/
-/*    font-display: swap;*/
-/*}*/
-
-/*@font-face {*/
-/*    font-family: 'Druk';*/
-/*    src: local('Druk Cyr Medium'), local('Druk-Cyr-Medium'),*/
-/*    url('DrukCyr-Medium.woff2') format('woff2'),*/
-/*    url('DrukCyr-Medium.woff') format('woff'),*/
-/*    url('DrukCyr-Medium.ttf') format('truetype');*/
-/*    font-weight: 500;*/
-/*    font-style: normal;*/
-/*}*/

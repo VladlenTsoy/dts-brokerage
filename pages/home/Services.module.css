@@ -19,7 +19,7 @@
 .title {
     font-size: var(--font-size-lg);
     margin-bottom: 24px;
-    font-family: Druk, sans-serif;
+    font-family: "Druk", sans-serif;
     color: var(--primary-color);
 }
 

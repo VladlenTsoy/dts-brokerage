@@ -38,13 +38,13 @@ a {
 }
 
 h1 {
-    font-family: Druk, sans-serif;
+    font-family: "Druk", sans-serif;
     font-size: var(--font-size-title);
     margin-top: 0;
 }
 
 h2 {
-    font-family: Druk, sans-serif;
+    font-family: "Druk", sans-serif;
     font-size: var(--font-size-title);
     color: var(--warning-color);
     font-weight: 400;
@@ -58,7 +58,13 @@ h3 {
 }
 
 @media (max-width: 992px) {
-
+    :root {
+        --font-size-title: 25px;
+        --font-size-sub: 20px;
+        --font-size-lg: 18px;
+        --font-size-md: 16px;
+        --font-size-sm: 14px;
+    }
 }
 
 @media (max-width: 767px) {
@@ -67,7 +73,7 @@ h3 {
 
 @media (max-width: 576px) {
     :root {
-        --font-size-title: 25px;
+        --font-size-title: 22px;
         --font-size-sub: 20px;
         --font-size-lg: 18px;
         --font-size-md: 16px;
