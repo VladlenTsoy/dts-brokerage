@@ -1,31 +1,15 @@
 .banner {
     position: relative;
-}
-
-.wrapper {
+    min-height: 494px;
+    height: 100%;
     width: 100%;
-    position: relative;
-    display: block;
-}
-
-.wrapper::before {
-    content: "";
-    display: block;
-    padding-bottom: calc(100% / 3);
-}
-
-.image {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    background: var(--bg-grey) url("../../../assets/images/banner-about-us.png") no-repeat center;
+    background: var(--bg-grey) url("../../assets/images/banner-about-us.png") no-repeat center;
     background-size: cover;
-    z-index: 3;
+    display: flex;
+    align-items: center;
 }
 
-.image::after {
+.banner::after {
     content: "";
     position: absolute;
     left: 0;
@@ -38,19 +22,14 @@
 }
 
 .container {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
+    position: relative;
     max-width: var(--max-width);
     margin: 0 auto;
     z-index: 5;
     color: white;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    padding-bottom: calc(100% / 5);
+    padding: 0 1rem;
+    width: 100%;
+    transform: translateY(-30%);
 }
 
 .title {
@@ -71,7 +50,7 @@
     max-width: var(--max-width);
     display: grid;
     grid-template-columns: 60% 40%;
-    margin: -10% auto 0;
+    margin: -150px auto 0;
     position: relative;
     z-index: 6;
 }
@@ -82,4 +61,18 @@
 
 .video {
     background: var(--primary-color);
+}
+
+
+@media (max-width: 992px) {
+    .card {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+}
+
+@media (max-width: 767px) {
+    .content {
+        padding: 33px 1rem 33px 1rem;
+    }
 }
