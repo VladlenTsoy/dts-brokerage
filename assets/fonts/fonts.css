@@ -18,16 +18,26 @@
 
 @font-face {
     font-family: 'Druk';
-    src: local('Druk'), url('./DrukWideLCG-Medium.ttf') format('truetype');
+    src: local('Druk'), url('./DrukWideLCG-Medium.woff') format('woff');
     font-weight: 400;
     font-style: normal;
     font-display: swap;
 }
 
-@font-face {
-    font-family: 'Druk';
-    src: local('Druk'), url('./DrukBold.TTF') format('truetype');
-    font-weight: 600;
-    font-style: normal;
-    font-display: swap;
-}
+/*@font-face {*/
+/*    font-family: 'Druk';*/
+/*    src: local('Druk'), url('./DrukBold.TTF') format('truetype');*/
+/*    font-weight: 600;*/
+/*    font-style: normal;*/
+/*    font-display: swap;*/
+/*}*/
+
+/*@font-face {*/
+/*    font-family: 'Druk';*/
+/*    src: local('Druk Cyr Medium'), local('Druk-Cyr-Medium'),*/
+/*    url('DrukCyr-Medium.woff2') format('woff2'),*/
+/*    url('DrukCyr-Medium.woff') format('woff'),*/
+/*    url('DrukCyr-Medium.ttf') format('truetype');*/
+/*    font-weight: 500;*/
+/*    font-style: normal;*/
+/*}*/
