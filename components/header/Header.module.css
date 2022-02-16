@@ -34,11 +34,25 @@
     color: var(--warning-color);
 }
 
+.mobileNavigation {
+    display: none;
+}
+
+@media (max-width: 992px) {
+    .navigation {
+        gap: 2rem;
+    }
+}
+
 @media (max-width: 767px) {
     .container {
         padding: 10px 1rem;
     }
     .navigation {
         display: none;
+    }
+
+    .mobileNavigation {
+        display: block;
     }
 }

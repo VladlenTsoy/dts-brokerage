@@ -1,0 +1,15 @@
+.buttonNavigation button {
+    background: none;
+    color: white;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+.buttonNavigation button div {
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0;
+    border-radius: 2px;
+}

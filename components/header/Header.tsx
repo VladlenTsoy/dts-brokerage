@@ -6,6 +6,8 @@ import cn from "classnames"
 import Link from "next/link"
 import {useRouter} from "next/router"
 import Head from "next/head"
+import {useMediaQuery} from "react-responsive"
+import ButtonNavigation from "./ButtonNavigation"
 
 interface HeaderProps {
     title?: string
@@ -19,6 +21,9 @@ const Header: React.FC<HeaderProps> = ({title = "DTS Brokerage Inc", desc = "", 
     const url = (typeof window !== "undefined" && window.location.href) || "https://dts.com/"
     const host = (typeof window !== "undefined" && window.location.host) || "dts.com"
     const DefaultImage = "/images/logo-dark.svg"
+    const isDesktopOrLaptop = useMediaQuery({
+        query: "(min-width: 992px)"
+    })
 
     return (
         <>
@@ -49,10 +54,15 @@ const Header: React.FC<HeaderProps> = ({title = "DTS Brokerage Inc", desc = "", 
                 <div className={styles.container}>
                     <Link href="/" passHref>
                         <div className={styles.logo}>
-                            <Image src={LogoImage} alt="dts-brokerage" width={200} height={70} />
-                            {/*<Image src={LogoImage} alt="dts-brokerage" width={150} height={55} />*/}
+                            {isDesktopOrLaptop ?
+                                <Image src={LogoImage} alt="dts-brokerage" width={200} height={70} /> :
+                                <Image src={LogoImage} alt="dts-brokerage" width={150} height={55} />
+                            }
                         </div>
                     </Link>
+                    <div className={styles.mobileNavigation}>
+                        <ButtonNavigation />
+                    </div>
                     <div className={styles.navigation}>
                         <Link href="/about-us" passHref>
                             <div className={cn(styles.item, {[styles.active]: router.asPath === "/about-us"})}>
