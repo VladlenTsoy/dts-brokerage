@@ -1,6 +1,6 @@
 import React from "react"
 import styles from "./List.module.css"
-import ServiceItem from "./ServiceItem"
+import ServiceItem from "../../components/services/ServiceItem"
 
 const List = () => {
     return (
