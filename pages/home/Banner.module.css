@@ -20,7 +20,7 @@
     right: 0;
     top: 0;
     bottom: 0;
-    background: var(--bg-grey) url("../../assets/images/banner.jpg") no-repeat center;
+    background: var(--bg-grey) url("../../assets/images/banner.webp") no-repeat center;
     background-size: cover;
     z-index: 3;
 }

@@ -3,7 +3,7 @@
     min-height: 494px;
     height: 100%;
     width: 100%;
-    background: var(--bg-grey) url("../../assets/images/banner-about-us.png") no-repeat center;
+    background: var(--bg-grey) url("../../assets/images/banner-about-us.webp") no-repeat center;
     background-size: cover;
     display: flex;
     align-items: center;

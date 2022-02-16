@@ -1,6 +1,6 @@
 .banner {
     position: relative;
-    background: var(--bg-grey) url("../../assets/images/banner-carriers.png") no-repeat center;
+    background: var(--bg-grey) url("../../assets/images/banner-carriers.webp") no-repeat center;
     background-size: cover;
     min-height: 634px;
     display: flex;

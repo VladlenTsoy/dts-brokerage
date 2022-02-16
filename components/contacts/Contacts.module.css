@@ -9,7 +9,7 @@
 }
 
 .banner {
-    background: var(--bg-grey) url("../../assets/images/banner.jpg") no-repeat center;
+    background: var(--bg-grey) url("../../assets/images/banner.webp") no-repeat center;
     background-size: cover;
 }
 
