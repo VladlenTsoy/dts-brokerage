@@ -16,6 +16,11 @@
     cursor: pointer;
 }
 
+.mLogo {
+    display: none;
+    cursor: pointer;
+}
+
 .navigation {
     display: flex;
     color: white;
@@ -45,9 +50,18 @@
 }
 
 @media (max-width: 767px) {
+    .logo {
+        display: none;
+    }
+
+    .mLogo {
+        display: block;
+    }
+
     .container {
         padding: 10px 1rem;
     }
+
     .navigation {
         display: none;
     }

@@ -6,7 +6,6 @@ import cn from "classnames"
 import Link from "next/link"
 import {useRouter} from "next/router"
 import Head from "next/head"
-import {useMediaQuery} from "react-responsive"
 import ButtonNavigation from "./ButtonNavigation"
 
 interface HeaderProps {
@@ -21,9 +20,6 @@ const Header: React.FC<HeaderProps> = ({title = "DTS Brokerage Inc", desc = "", 
     const url = (typeof window !== "undefined" && window.location.href) || "https://dts.com/"
     const host = (typeof window !== "undefined" && window.location.host) || "dts.com"
     const DefaultImage = "/images/logo-dark.svg"
-    const isDesktopOrLaptop = useMediaQuery({
-        query: "(min-width: 992px)"
-    })
 
     return (
         <>
@@ -53,38 +49,40 @@ const Header: React.FC<HeaderProps> = ({title = "DTS Brokerage Inc", desc = "", 
             <div className={styles.header}>
                 <div className={styles.container}>
                     <Link href="/" passHref>
-                        <div className={styles.logo}>
-                            {isDesktopOrLaptop ?
-                                <Image src={LogoImage} alt="dts-brokerage" width={200} height={70} /> :
-                                <Image src={LogoImage} alt="dts-brokerage" width={150} height={55} />
-                            }
-                        </div>
+                        <a className={styles.logo}>
+                            <Image src={LogoImage} alt="dts-brokerage" width={200} height={70} />
+                        </a>
+                    </Link>
+                    <Link href="/" passHref>
+                        <a className={styles.mLogo}>
+                            <Image src={LogoImage} alt="dts-brokerage" width={150} height={55} />
+                        </a>
                     </Link>
                     <div className={styles.mobileNavigation}>
                         <ButtonNavigation />
                     </div>
-                    <div className={styles.navigation}>
+                    <ol className={styles.navigation}>
                         <Link href="/about-us" passHref>
-                            <div className={cn(styles.item, {[styles.active]: router.asPath === "/about-us"})}>
+                            <a className={cn(styles.item, {[styles.active]: router.asPath === "/about-us"})}>
                                 About us
-                            </div>
+                            </a>
                         </Link>
                         <Link href="/carriers" passHref>
-                            <div className={cn(styles.item, {[styles.active]: router.asPath === "/carriers"})}>
+                            <a className={cn(styles.item, {[styles.active]: router.asPath === "/carriers"})}>
                                 Carriers
-                            </div>
+                            </a>
                         </Link>
                         <Link href="/services" passHref>
-                            <div className={cn(styles.item, {[styles.active]: router.asPath === "/services"})}>
+                            <a className={cn(styles.item, {[styles.active]: router.asPath === "/services"})}>
                                 Services
-                            </div>
+                            </a>
                         </Link>
                         <Link href="/contact-us" passHref>
-                            <div className={cn(styles.item, {[styles.active]: router.asPath === "/contact-us"})}>
+                            <a className={cn(styles.item, {[styles.active]: router.asPath === "/contact-us"})}>
                                 Contact Us
-                            </div>
+                            </a>
                         </Link>
-                    </div>
+                    </ol>
                 </div>
             </div>
         </>
