@@ -1,31 +1,13 @@
 .banner {
     position: relative;
-}
-
-.wrapper {
-    width: 100%;
-    position: relative;
-    display: block;
-}
-
-.wrapper::before {
-    content: "";
-    display: block;
-    padding-bottom: calc(100% / 2.5);
-}
-
-.image {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    background: var(--bg-grey) url("../../../assets/images/banner-carriers.png") no-repeat center;
+    background: var(--bg-grey) url("../../assets/images/banner-carriers.png") no-repeat center;
     background-size: cover;
-    z-index: 3;
+    height: 634px;
+    display: flex;
+    align-items: center;
 }
 
-.image::after {
+.banner::after {
     content: "";
     position: absolute;
     left: 0;
@@ -38,11 +20,7 @@
 }
 
 .container {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
+    position: relative;
     max-width: var(--max-width);
     margin: 0 auto;
     z-index: 5;
@@ -50,9 +28,8 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    padding: 0 1rem;
-    padding-bottom: calc(100% / 5);
-    transform: translateY(15%);
+    padding: 0 1rem 0;
+    transform: translateY(-30%);
 }
 
 .title {
@@ -67,4 +44,15 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 84px;
+}
+
+@media (max-width: 767px) {
+    .container {
+        transform: translateY(-20%);
+    }
+
+    .desc {
+        grid-template-columns: 1fr;
+        gap: 44px;
+    }
 }

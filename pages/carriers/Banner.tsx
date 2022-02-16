@@ -1,14 +1,11 @@
 import React from "react"
 import styles from "./Banner.module.css"
-import Cards from "../cards/Cards"
+import Cards from "./Cards"
 
 const Banner = () => {
     return (
         <>
             <div className={styles.banner}>
-                <div className={styles.wrapper}>
-                    <div className={styles.image} />
-                </div>
                 <div className={styles.container}>
                     <h1 className={styles.title}>Carriers</h1>
                     <div className={styles.desc}>
