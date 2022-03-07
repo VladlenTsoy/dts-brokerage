@@ -23,7 +23,7 @@ const FormContactUs = () => {
         setLoading(true)
         const body = serializeForm()
         const response = await axios.post("https://api.dtsincorporated.com/dtsbrokers", body)
-        // const response = await axios.post("http://localhost:8000/dts", body)
+        // const response = await axios.post("http://localhost:8000/dtsbrokers", body)
         setLoading(false)
         if (response.status) {
             setVisibleMessage(true)

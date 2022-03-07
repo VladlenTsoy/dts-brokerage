@@ -10,7 +10,7 @@ const Banner = () => {
                     Fueling your Logistics chain
                 </h1>
                 <div className={styles.desc}>
-                    We provide an “A” to “Z” service for your loads, logistic <br />
+                    We provide a professional service for your loads, logistic <br />
                     solutions, and enhance your footprint in the U.S.
                 </div>
             </div>
