@@ -29,8 +29,21 @@
     border: 0;
 }
 
+.message {
+    height: 400px;
+    display: flex;
+    align-items: center;
+    font-size: var(--font-size-title);
+    width: 50%;
+    color: #ffffff;
+}
+
 @media (max-width: 767px) {
     .form {
+        width: 100%;
+    }
+
+    .message {
         width: 100%;
     }
 }
