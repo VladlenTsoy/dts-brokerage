@@ -5,7 +5,6 @@ import styles from "./FormContactUs.module.css"
 const FormContactUs = () => {
     const ref = useRef<any>()
     const [loading, setLoading] = useState(false)
-    const [visible, setVisible] = useState(false)
     const [visibleMessage, setVisibleMessage] = useState(false)
     //
     const serializeForm = () => {
@@ -19,8 +18,6 @@ const FormContactUs = () => {
         return obj
     }
     //
-    const onHandler = () => setVisible(prevState => !prevState)
-    //
     const onSubmitHandler = async (e: any) => {
         e.preventDefault()
         setLoading(true)
@@ -29,7 +26,6 @@ const FormContactUs = () => {
         // const response = await axios.post("http://localhost:8000/dts", body)
         setLoading(false)
         if (response.status) {
-            setVisible(false)
             setVisibleMessage(true)
         }
     }
