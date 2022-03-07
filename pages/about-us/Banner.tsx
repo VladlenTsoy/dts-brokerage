@@ -28,8 +28,10 @@ const Banner = () => {
                     limited time. DTS Brokerage is your destination for all your transportation expertise.
                 </div>
                 <div className={styles.video}>
-                    <iframe src="https://drive.google.com/file/d/1zbR-7BnsxV2ZZ135lK7Zfwz07QdfOKT0/preview" width="100%"
-                            height="100%" allow="autoplay" />
+                    <video width="100%" height="100%" controls autoPlay muted>
+                        <source src="https://eon.uz/assets/DTS.mp4" type="video/mp4" />
+                        Your browser does not support the video tag.
+                    </video>
                 </div>
             </div>
         </>
