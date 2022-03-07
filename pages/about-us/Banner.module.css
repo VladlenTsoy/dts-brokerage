@@ -60,14 +60,17 @@
 }
 
 .video {
-    background: var(--primary-color);
+    /*background: var(--primary-color);*/
 }
 
+.video iframe {
+    border: 0;
+}
 
 @media (max-width: 992px) {
     .card {
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: auto;
     }
 }
 

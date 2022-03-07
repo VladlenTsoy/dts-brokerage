@@ -27,8 +27,8 @@ const AboutUs = () => {
                     </div>
                 </div>
                 <div className={styles.video}>
-                    <div className={styles.videoExample}>
-                    </div>
+                    <iframe src="https://drive.google.com/file/d/1zbR-7BnsxV2ZZ135lK7Zfwz07QdfOKT0/preview" width="100%"
+                            height="100%" allow="autoplay" />
                 </div>
             </div>
         </div>
